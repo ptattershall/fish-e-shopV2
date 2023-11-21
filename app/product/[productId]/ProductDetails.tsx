@@ -17,7 +17,7 @@ export type CartProduct = {
   name: string;
   description: string;
   category: string;
-  brand: string;
+  series: string;
   selectedImage: SelectedImage;
   quantity: number;
   price: number;
@@ -47,7 +47,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
     name: product.name,
     description: product.description,
     category: product.category,
-    brand: product.brand,
+    series: product.series,
     selectedImage: { ...product.images[0] },
     quantity: 1,
     price: product.price,
@@ -126,7 +126,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           <span className="font-semibold">CATEGORY:</span> {product.category}
         </div>
         <div>
-          <span className="font-semibold">BRAND:</span> {product.brand}
+          <span className="font-semibold">SERIES:</span> {product.series}
         </div>
         <div className={product.inStock ? "text-teal-400" : "text-rose-400"}>
           {product.inStock ? "In stock" : "Out of stock"}

@@ -212,7 +212,7 @@ const AddProductForm = () => {
         required
       ></Input>
       <Input
-        id="brand"
+        id="series"
         label="Series"
         disabled={isLoading}
         register={register}

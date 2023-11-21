@@ -43,7 +43,7 @@ const ManageProductsClient: React.FC<ManageProductsClientProps> = ({
         name: product.name,
         price: formatPrice(product.price),
         category: product.category,
-        brand: product.brand,
+        series: product.series,
         inStock: product.inStock,
         images: product.images,
       };
@@ -64,7 +64,7 @@ const ManageProductsClient: React.FC<ManageProductsClientProps> = ({
       },
     },
     { field: "category", headerName: "Category", width: 100 },
-    { field: "brand", headerName: "Brand", width: 100 },
+    { field: "series", headerName: "Series", width: 100 },
     {
       field: "inStock",
       headerName: "inStock",

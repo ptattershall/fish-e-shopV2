@@ -49,7 +49,7 @@ model Product{
   name String
   description String
   price Float
-  brand String
+  series String
   category String
   inStock Boolean
   images Image[]
@@ -95,7 +95,7 @@ type CartProduct{
   name String
   description String
   category String
-  brand String
+  series String
   quantity Int
   price Float
   selectedImage Image
